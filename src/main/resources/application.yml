@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Simulator
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      schema-locations: classpath:/sql/createSchema.sql
+      encoding: UTF-8
+      mode: embedded
